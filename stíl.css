@@ -1,0 +1,11 @@
+
+
+a[href*="github.com"] {
+    background: url(https://github.githubassets.com/favicons/favicon.png) no-repeat center left;
+    padding: 0.4em 0.4em 0.4em 1.3em;
+    background-size: 1em;
+    margin: 0.3em;
+    display: inline-block;
+    margin-left: 50%;
+    translate: -50%;
+}
