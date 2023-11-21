@@ -5,7 +5,7 @@ This is a clone of http://nualeargais.ie/gnag/ taken from https://web.archive.or
 As a temporary home, it can be browsed here: https://cuplamilefocal.github.io/gnag/
 (probably best not to link to that yet)
 
-## attribution
+## Attribution
 
 That was an English translation of the original German by Lars Bräsicke; https://braesicke.de/gramadac.htm
 
@@ -19,7 +19,7 @@ I have asked Lars for permission to continue the translation, but have not heard
 ## Goals
 
  - incorporate the German text in a parallel fashion
- - clean up HTML (css rather than <font>)
+ - clean up HTML (css rather than `<font>` all over the place)
  - convert to markdown (maybe?)
  - ~publish on github~
  - accept corrections and expansions
