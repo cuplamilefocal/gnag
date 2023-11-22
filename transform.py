@@ -6,6 +6,7 @@ for fn in glob('*.htm') + ['index.html']:
         content = f.read()
         ncontent = content
         ncontent = ncontent.replace('&quot;', '"')
+        ncontent = ncontent.replace('&copy;', '©')
         if content != ncontent:
             with open(fn, 'w') as fw:
                 fw.write(ncontent)
