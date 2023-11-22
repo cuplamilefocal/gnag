@@ -1,7 +1,7 @@
 import html
 from glob import glob
 
-for fn in glob('*.htm') + ['index.html']:
+for fn in glob('*.htm') + glob('de/*.htm') + ['index.html', 'de/index.html']:
     with open(fn, 'r') as f:
         content = f.read()
         ncontent = content
