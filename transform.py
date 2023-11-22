@@ -63,6 +63,16 @@ for fn in glob('*.htm') + glob('de/*.htm') + ['index.html', 'de/index.html']:
             ncontent = re.sub(f'<h3> *<font color="#?{k}">([^<]+)</font></h3>', f'<h3 class="{v}">\\1</h3>', ncontent, flags=re.I)
             ncontent = re.sub(f'<font color="#?{k}">(.*?)</font>', f'<span class="{v}">\\1</span>', ncontent, flags=re.I)
 
+        ncontent = re.sub(f'<(\w+)> *<a name="(.*?)"></a>', f'<\\1 id="\\2">', ncontent, flags=re.I)
+        ncontent = re.sub(f'<a name="(.*?)"></a><b', f'<b id="\\1"', ncontent, flags=re.I)
+        ncontent = re.sub(f'<a name="(.*?)"></a><i', f'<i id="\\1"', ncontent, flags=re.I)
+        ncontent = re.sub(f'<h2>\n *<i id="(.*?)"', f'<h2 id="\\1"><i', ncontent, flags=re.M)
+        # todo: see git grep '<a name'
+        ncontent = re.sub(f'<h2><a name="(.*?)">(.*?)</a></h2>', f'<h2 id="\\1">\\2</h2>', ncontent, flags=re.M)
+        ncontent = re.sub(f'<h1><a name="(.*?)">(.*?)</a></h1>', f'<h1 id="\\1">\\2</h1>', ncontent, flags=re.M)
+        ncontent = re.sub(f'<h3><a name="(.*?)">(.*?)</a></h3>', f'<h3 id="\\1">\\2</h3>', ncontent, flags=re.M)
+        ncontent = re.sub(f'<h2><i><span class="lightgreen"><a name="(.*?)">(.*?)</a></span></i></h2>', f'<h2 id="\\1" class="lightgreen"><i>\\2</i></h3>', ncontent, flags=re.M)
+
         # https://stackoverflow.com/a/21014546/6691
         # will be bettter to transform these using <q>
         # ncontent = ncontent.replace('“', '"')
