@@ -52,7 +52,7 @@ for fn in glob('*.htm') + glob('de/*.htm') + ['index.html', 'de/index.html']:
             ncontent = re.sub(f'<h1> *<font color="#?{k}">([^<]+)</font></h1>', f'<h1 class="{v}">\\1</h1>', ncontent, flags=re.I)
             ncontent = re.sub(f'<h2> *<font color="#?{k}">([^<]+)</font></h2>', f'<h2 class="{v}">\\1</h2>', ncontent, flags=re.I)
             ncontent = re.sub(f'<h3> *<font color="#?{k}">([^<]+)</font></h3>', f'<h3 class="{v}">\\1</h3>', ncontent, flags=re.I)
-            ncontent = re.sub(f'<font color="#?{k}">(.*?)</font>', f'<span class="{v}">\\1</span>', ncontent)
+            ncontent = re.sub(f'<font color="#?{k}">(.*?)</font>', f'<span class="{v}">\\1</span>', ncontent, flags=re.I)
 
         # https://stackoverflow.com/a/21014546/6691
         # will be bettter to transform these using <q>
