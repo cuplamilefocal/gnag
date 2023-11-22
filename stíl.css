@@ -9,3 +9,86 @@ a[href*="github.com"] {
     margin-left: 50%;
     translate: -50%;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.black {
+    color: #000000;
+}
+.brightblue {
+    color: #0000FF;
+}
+.darkgreen {
+    color: #006600;
+}
+.lightgreen {
+    color: #009900;
+}
+.blue {
+    color: #3333FF;
+}
+.lightblue {
+    color: #3366FF;
+}
+.mustard {
+    color: #808000;
+}
+.darkred {
+    color: #990000;
+}
+.burgundy {
+    color: #990033;
+}
+.darkgrey {
+    color: #999999;
+}
+.darkgrey {
+    color: #9C9C9C;
+}
+.lightgrey {
+    color: #C0C0C0;
+}
+.lightgrey {
+    color: #CFCFCF;
+}
+.red {
+    color: #CC0000;
+}
+.red {
+    color: #CC000;
+}
+.lilac {
+    color: #CC33CC;
+}
+.tangerine {
+    color: #CC6600;
+}
+.lilac {
+    color: #CC66CC;
+}
+.olive {
+    color: #CCCC00;
+}
+.red {
+    color: #FF0000;
+}
+.neon {
+    color: #FF00FF;
+}
+.pink {
+    color: #FF6666;
+}
+.yellow {
+    color: #FFCC00;
+}
+.peach {
+    color: #FFCC99;
+}
+.lightyellow {
+    color: #FFFFCC;
+}
+.offwhite {
+    color: #FFFFFC;
+}
