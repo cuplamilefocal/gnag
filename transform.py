@@ -12,6 +12,11 @@ for fn in glob('*.htm') + ['index.html']:
                 ncontent = ncontent.replace('&'+k, v)
         ncontent = ncontent.replace('(c) L', '© L')
         ncontent = ncontent.replace('(C) L', '© L')
+
+        # https://stackoverflow.com/a/21014546/6691
+        # will be bettter to transform these using <q>
+        # ncontent = ncontent.replace('“', '"')
+        # ncontent = ncontent.replace('”', '"')
         if content != ncontent:
             with open(fn, 'w') as fw:
                 fw.write(ncontent)
