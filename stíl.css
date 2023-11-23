@@ -46,25 +46,13 @@ a[href*="github.com"] {
     color: #990033;
 }
 .darkgrey {
-    color: #999999;
-}
-.darkgrey {
     color: #9C9C9C;
-}
-.lightgrey {
-    color: #C0C0C0;
 }
 .lightgrey {
     color: #CFCFCF;
 }
 .red {
     color: #CC0000;
-}
-.red {
-    color: #CC000;
-}
-.lilac {
-    color: #CC33CC;
 }
 .tangerine {
     color: #CC6600;
@@ -74,9 +62,6 @@ a[href*="github.com"] {
 }
 .olive {
     color: #CCCC00;
-}
-.red {
-    color: #FF0000;
 }
 .neon {
     color: #FF00FF;
