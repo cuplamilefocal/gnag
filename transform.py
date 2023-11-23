@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import html
 from glob import glob
 import re
@@ -13,6 +15,13 @@ for fn in glob('*.htm') + glob('de/*.htm') + ['index.html', 'de/index.html']:
                 ncontent = ncontent.replace('&'+k, v)
         ncontent = ncontent.replace('(c) L', '© L')
         ncontent = ncontent.replace('(C) L', '© L')
+
+        if 'de' not in fn:
+            ncontent = ncontent.replace(
+                'view on github</a>',
+                f'''view on github</a>
+                <a href="https://braesicke.de/{fn}">view original German</a>''',
+            )
 
         colormap = {
             '000000': 'black',
