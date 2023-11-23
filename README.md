@@ -11,7 +11,7 @@ That was an English translation of the original German by Lars Bräsicke; https:
 
 "Translation into English courtesy of Lynn Schneider (all pages except: satz2.htm and satz4.htm, with the kind help of Daniel Nieciecki)"
 
-The English version was for a long time hosted by Amy of http://nualeargais.ie/, this clone was prompted by that being taken offline.
+The English version was for a long time hosted by Amy of http://nualeargais.ie/, this clone was prompted by that falling offline (it's back now).
 
 I have asked Lars for permission to continue the translation, but have not heard back yet!
 
